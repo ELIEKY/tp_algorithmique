@@ -1,0 +1,63 @@
+==================== Fonction intersection deux cercles =======================
+fonction intersection_cercles ( r1, r2 ) : en entier
+	variable som_rayon	distance_centre en decimal
+
+        debut
+	ecrire "entrez les coordonnées x et y du prémier cercle : "
+	lire x1 et y1
+	ecrire "entrez les coordonnées x et y du deuxième cercle : "
+	lire x1 et y2
+	distance_centre= sqrt(x2-x1)^2 +(y2-y1)^2 
+	som_rayon = r1+r2
+	si distance_centre <= som_rayon alors
+		ecrire " les cercles sont en intersection "
+	sinon
+		ecrire " les cercles n'est sont pas intersection "
+	finsi
+        fin
+finfonction
+
+la complexité de l'algorithme est  O(n)
+
+==================== Fonction tri de deux tableaux =======================
+
+fonction tri (T1: tableau [0:n]; T2: tableau T2[0:m]; T: tableau [0:n+m] :  entier ; n; m : entier) : entier 
+	debut
+	// n est la taille du tableau T1, m est la taille du tableau T2 
+		i <--- 0 // i est l'indice du tableau T1
+		j <--- 0  // j est l'indice du tableau T2
+		K <--- 0 // k est l'indice du tableau T
+		ecrire " saisir la taille du tableau T1 : "
+		lire n
+		ecrire " saisir la taille du tableau T2 : "
+		lire m
+		tant que i < n Et j <=m faire
+           		       si    T1[i] < T2[j] alors
+	  	             T[k] <-- T1[i]
+	                             k <-- k+1
+		               i <-- i+1
+  		        sinon
+	                            T[k] <-- T2[j]
+	                             k <-- k+1
+	                             j <-- j+1
+                                     finsi
+                             fintantque
+		tant que i < n faire
+		             T[k] <-- T1[i]
+	                            k <-- k+1
+		              i <-- i+1
+		fintanque
+		tant que j < m faire
+		             T[k] <-- T2[i]
+	                            k <-- k+1
+		              j <-- j+1
+		fintanque 
+		retourner T
+	fin
+finfonction
+la complexité de l'algorithme est O(n)
+
+			
+
+	    
+           	 
